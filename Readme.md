@@ -19,7 +19,7 @@ Users should be able to:
 
 ### Screenshot
 
-![image](https://user-images.githubusercontent.com/64808015/134496144-33663018-b844-468f-a533-99b1540857fe.png)
+![image](https://user-images.githubusercontent.com/64808015/135524755-206eb2c0-63bb-4683-a5d0-27f4c9f24e9f.png)
 
 ### Links
 
