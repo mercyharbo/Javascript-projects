@@ -4,25 +4,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Navbar </title>
+    <title> Incrementing Counter </title>
     <link rel="stylesheet" href="./style.css">
+    <!-- FontAwesome CDN -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
         integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
 </head>
 <body>
-    <div class="container">
-        <nav class="active" id="nav">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Works</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-            <button class="icon" id="toggle">
-                <div class="line line1"></div>
-                <div class="line line2"></div>
-            </button>
-        </nav>
-        <script src="script.js"></script>
+    <div class="counter-container">
+        <i class="fab fa-twitter fa-3x"></i>
+        <div class="counter" data-target="5199"></div>
+        <span> Twitters Followers </span>
+    </div>
+
+    <div class="counter-container">
+        <i class="fab fa-instagram fa-3x"></i>
+        <div class="counter" data-target="3437"></div>
+        <span> Instagram Followers </span>
+    </div>
+    <div class="counter-container">
+        <i class="fab fa-facebook fa-3x"></i>
+        <div class="counter" data-target="18000"></div>
+        <span> Facebook Followers </span>
+    </div>
+
+    <script src="./script.js"></script>
 </body>
 </html>
