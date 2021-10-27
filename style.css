@@ -1,0 +1,207 @@
+@import url("https://fonts.googleapis.com/css2?family=Festive&family=Roboto:wght@400;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #22254b;
+  color: white;
+}
+
+header {
+  padding: 1% 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #373b69;
+}
+header .brand_nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  gap: 20px;
+}
+header .brand_nav .brand a {
+  text-decoration: none;
+  color: #fff;
+  font-family: "Festive", cursive;
+  font-size: 2.5rem;
+}
+header .brand_nav nav a {
+  padding: 0 10px;
+  text-decoration: none;
+  color: white;
+  font-family: inherit;
+  font-weight: 600;
+}
+
+#search {
+  background-color: transparent;
+  border: 2px solid #22254b;
+  border-radius: 50px;
+  font-family: inherit;
+  font-size: 1rem;
+  padding: 10px 20px;
+  color: white;
+}
+
+#search:focus {
+  outline: 0;
+  background-color: #22254b;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 5% 2% 2% 2%;
+}
+
+.movie {
+  width: 220px;
+  height: 400px;
+  background-position: center;
+  background-size: cover;
+  margin: 1%;
+  background-color: #373b69;
+  -webkit-box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+  position: relative;
+  overflow: hidden;
+  border: 3px;
+  border-radius: 5px;
+}
+.movie .movie_info {
+  color: #eee;
+  padding: 1% 5%;
+}
+.movie .movie_info .release_date {
+  font-size: 14px;
+  color: gray;
+  padding: 2% 0 0 0;
+}
+.movie .movie_info .movie_detail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.movie .movie_info h5 {
+  margin-top: 0;
+}
+.movie .movie_info span {
+  background-color: #22254b;
+  padding: 0.25rem 0.5rem;
+  border-radius: 3px;
+  font-weight: bold;
+  font-size: 12px;
+}
+.movie .movie_info span.green {
+  color: limegreen;
+}
+.movie .movie_info span.orange {
+  color: orangered;
+}
+.movie .movie_info span.red {
+  color: red;
+}
+.movie img {
+  width: 100%;
+}
+
+.overview {
+  color: black;
+  background-color: #fff;
+  padding: 5%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  max-height: 100%;
+  -webkit-transform: translateY(101%);
+          transform: translateY(101%);
+  -webkit-transition: -webkit-transform 0.3s ease-in;
+  transition: -webkit-transform 0.3s ease-in;
+  transition: transform 0.3s ease-in;
+  transition: transform 0.3s ease-in, -webkit-transform 0.3s ease-in;
+}
+.overview p {
+  padding-top: 5%;
+}
+
+.movie:hover .overview {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+.popularMovies {
+  padding: 1% 5% 5% 5%;
+}
+.popularMovies h2 {
+  font-size: 21px;
+  font-weight: 500;
+  font-family: inherit;
+  position: relative;
+  padding: 2% 0;
+}
+.popularMovies h2::after {
+  content: "";
+  width: 150px;
+  border: 1px solid white;
+  position: absolute;
+  top: 39px;
+  left: 150px;
+}
+.popularMovies .hero {
+  padding: 2% 0;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 2% 1fr 2% 1fr 2% 1fr 2% 1fr;
+  grid-template-columns: repeat(5, 1fr);
+  row-gap: 2%;
+  -webkit-column-gap: 2%;
+     -moz-column-gap: 2%;
+          column-gap: 2%;
+}
+.popularMovies .hero .movie {
+  width: 220px;
+  padding: 0;
+}
+
+.slideshow {
+  padding: 0;
+  margin: 0;
+}
+.slideshow img {
+  width: 100%;
+  height: 500px;
+}
